@@ -1,6 +1,6 @@
 
 import Nav from './components/Nav';
-import Home from './pages/home';
+import Home from './pages/Home';
 import './styles/Index.scss';
 
 
