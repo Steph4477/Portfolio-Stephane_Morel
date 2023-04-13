@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.5658c6b9.css",
-    "main.js": "/static/js/main.bd7d1a02.js",
-    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/monkey.mp4": "/static/media/monkey.add9063b1bde96d7dd74.mp4",
-    "static/media/lapanthere.png": "/static/media/lapanthere.587cfc08791408cf69da.png",
-    "static/media/captureBooki.png": "/static/media/captureBooki.365f38b4256f143f2104.png",
-    "static/media/ohmyfood.png": "/static/media/ohmyfood.5a7e12361cec621e4c14.png",
-    "static/media/photo_mini.png": "/static/media/photo_mini.f9eb77d5ccdf3f4cfd25.png",
-    "static/media/ohmyfoodV.png": "/static/media/ohmyfoodV.a6bbe03603e500b46c2e.png",
-    "static/media/lapanthereV.png": "/static/media/lapanthereV.74e30e6d4bfede71d2f9.png",
-    "static/media/nodejs.svg": "/static/media/nodejs.2392983dc38f1c5a989eef634eceddbe.svg",
-    "static/media/photoshop.svg": "/static/media/photoshop.76c9ccfc41e42378781d663b9be063f0.svg",
-    "static/media/mongodb.svg": "/static/media/mongodb.389aa18a9b02da23f02b77ddfc9d12be.svg",
-    "static/media/javascript.svg": "/static/media/javascript.865c831e9be0fc4b6b6d2ea470b3fa64.svg",
-    "index.html": "/index.html",
-    "static/media/express.svg": "/static/media/express.13e4b3884f318c648bfe0207aa64c8dc.svg",
-    "static/media/rotateIcon.svg": "/static/media/rotateIcon.c3057e07abbcdb0556a6ea200d187e76.svg",
-    "main.5658c6b9.css.map": "/static/css/main.5658c6b9.css.map",
-    "main.bd7d1a02.js.map": "/static/js/main.bd7d1a02.js.map",
-    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/Portfolio-Stephane_Morel/static/css/main.5658c6b9.css",
+    "main.js": "/Portfolio-Stephane_Morel/static/js/main.7272a792.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js",
+    "static/media/monkey.mp4": "/Portfolio-Stephane_Morel/static/media/monkey.add9063b1bde96d7dd74.mp4",
+    "static/media/lapanthere.png": "/Portfolio-Stephane_Morel/static/media/lapanthere.587cfc08791408cf69da.png",
+    "static/media/captureBooki.png": "/Portfolio-Stephane_Morel/static/media/captureBooki.365f38b4256f143f2104.png",
+    "static/media/ohmyfood.png": "/Portfolio-Stephane_Morel/static/media/ohmyfood.5a7e12361cec621e4c14.png",
+    "static/media/photo_mini.png": "/Portfolio-Stephane_Morel/static/media/photo_mini.f9eb77d5ccdf3f4cfd25.png",
+    "static/media/ohmyfoodV.png": "/Portfolio-Stephane_Morel/static/media/ohmyfoodV.a6bbe03603e500b46c2e.png",
+    "static/media/lapanthereV.png": "/Portfolio-Stephane_Morel/static/media/lapanthereV.74e30e6d4bfede71d2f9.png",
+    "static/media/nodejs.svg": "/Portfolio-Stephane_Morel/static/media/nodejs.2392983dc38f1c5a989eef634eceddbe.svg",
+    "static/media/photoshop.svg": "/Portfolio-Stephane_Morel/static/media/photoshop.76c9ccfc41e42378781d663b9be063f0.svg",
+    "static/media/mongodb.svg": "/Portfolio-Stephane_Morel/static/media/mongodb.389aa18a9b02da23f02b77ddfc9d12be.svg",
+    "index.html": "/Portfolio-Stephane_Morel/index.html",
+    "static/media/javascript.svg": "/Portfolio-Stephane_Morel/static/media/javascript.865c831e9be0fc4b6b6d2ea470b3fa64.svg",
+    "static/media/express.svg": "/Portfolio-Stephane_Morel/static/media/express.13e4b3884f318c648bfe0207aa64c8dc.svg",
+    "static/media/rotateIcon.svg": "/Portfolio-Stephane_Morel/static/media/rotateIcon.c3057e07abbcdb0556a6ea200d187e76.svg",
+    "main.5658c6b9.css.map": "/Portfolio-Stephane_Morel/static/css/main.5658c6b9.css.map",
+    "main.7272a792.js.map": "/Portfolio-Stephane_Morel/static/js/main.7272a792.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5658c6b9.css",
-    "static/js/main.bd7d1a02.js"
+    "static/js/main.7272a792.js"
   ]
 }
