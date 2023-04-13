@@ -1,0 +1,56 @@
+.onglet {
+
+    width: 100%;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &_service {
+
+
+
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    &__titre {
+        font-size: 30px;
+        width: 70%;
+    }
+
+
+
+}
+
+.collapse_content_contenu {
+    box-shadow: 13px -15px 21px 3px rgba(138, 133, 138, 1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    width: 95%;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    margin: 0 auto;
+    @include for-mobile{
+        width: 90%;
+    }
+
+}
+
+
+
+.collapse_content.open {
+    width: 100%;
+    height: calc(100vh - 150px);
+    /* ajustez la hauteur selon vos besoins */
+    transition: 0.8s ease-in-out;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
