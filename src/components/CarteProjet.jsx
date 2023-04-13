@@ -16,11 +16,10 @@ const liens = [
 const titres = [
   "Intégration d'un design de site web adaptable (responsive)",
   "Conception d'un site web animé avec des styles CSS",
-  "Amélioration du référencement, de l'accessibilité et de la performance d'un site web existant",
-  "", "", ""
+  "Amélioration du référencement, de l'accessibilité et de la performance d'un site web existant"
 ];
-const imagesRecto = [booki, ohmyfood, lapanthere, "image4"];
-const imagesVerso = [bookiV, ohmyfoodV, lapanthereV, "image4"];
+const imagesRecto = [booki, ohmyfood, lapanthere, ];
+const imagesVerso = [bookiV, ohmyfoodV, lapanthereV, ];
 
 export default function CarteDeProjet() {
 

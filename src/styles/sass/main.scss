@@ -21,27 +21,34 @@ body {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 50px;
   
 
-  @include for-tablet {
-    font-size: 35px;
+  
+    @include for-mobile {
+      font-size: 25px;
+  
+  
+    }
 
-
-  }
+  
 }
 
 h2 {
-  font-size: 40px;
-  margin-left: 5px;
-  @include for-tablet{
-    font-size: 25px;
-  }
+  font-size: 30px;
+  
+  
   @include for-mobile{
-    font-size: 25px
+    font-size: 22px
   }
 }
-
+h3 {
+  font-size: 30px;
+  margin-left: 5px;
+  @include for-mobile{
+    font-size: 16px
+  }
+}
 a {
   text-decoration: none;
   color: black;
@@ -50,7 +57,7 @@ a {
     font-size: 20px
   }
   @include for-mobile{
-    font-size: 18px
+    font-size: 16px
   }
 
 }

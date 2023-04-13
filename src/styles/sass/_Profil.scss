@@ -1,7 +1,7 @@
 @import '../mixins';
 .profil {
     &_container {
-       
+        
         animation: clique 800ms ease-in-out;
         
 
@@ -13,12 +13,14 @@
             display: flex;
             flex-wrap: wrap;
             justify-content:center;
+
            
         }
         @include for-mobile{
             display: flex;
             flex-wrap: wrap;
             justify-content:center;
+            
            
         }
 
@@ -26,9 +28,10 @@
 
         
         &_carte {
-            width: 60%;
+            width: 50%;
+           
             display: flex;
-            justify-content: space-around;
+           
             align-items: center;
 
             padding-bottom: 10vh;
@@ -36,17 +39,14 @@
                 width: 80%;
                 margin: 0 auto;       
             }
-            @include for-mobile{
-                width: 95%;
-                margin: 0 auto;        
-            }
+            
 
 
         }
 
         &_description {
             padding: 5vh;
-            width: 40%;
+            width: 50%;
            
             color: black;
             @include for-tablet{

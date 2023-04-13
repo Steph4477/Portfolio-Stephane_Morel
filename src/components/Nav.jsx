@@ -37,7 +37,7 @@ export default function Nav(){
                 <div className="header_nav_contact">
                     <div className="header_nav_contact_tel">
                         <i className="fas fa-phone header_nav_contact_tel_icone"></i>
-                        <a href="tel:0620519091" className="header_nav_contact_tel_N">Appelez-moi</a>
+                        <a href="tel:0620519091" className="header_nav_contact_tel_N">Appelez</a>
                     </div>
                     <div className="header_nav_contact_mail">
                         <i className="fas fa-envelope header_nav_contact_mail_icone"></i>

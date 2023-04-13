@@ -104,19 +104,19 @@
         }
 
         &_contact {
-            width: 15%;
+           width: 15%;
             
             @include for-tablet{
-
+                width: 30%;
                 margin: 0 auto;
                 margin-top: 5vh;
-                width: calc(100% - 400px); 
+                
             }
             @include for-mobile{
-
+                width: 40%;
                 margin: 0 auto;
                 margin-top: 5vh;
-                width: calc(100% - 200px); 
+                
             }
 
 
@@ -134,7 +134,7 @@
                 &_icone {
                     width: 20%;
                     text-align: center;
-                    font-size: 35px;
+                    padding-right: 30px;
                 }
 
                 &_N {
@@ -148,6 +148,13 @@
                     justify-content: center;
                     align-items: center;
                     perspective: 10px;
+                    @include for-tablet {
+                        width: 40%;
+                        @include for-mobile {
+                            width: 40%;
+                        }
+    
+                    }
 
                     &:hover {
                         box-shadow: 2px 0px 50px 2px rgb(240, 230, 211);
@@ -164,9 +171,8 @@
                 &_icone {
                     width: 20%;
                     text-align: center;
-                    font-size: 35px;
                     color: rgb(51, 48, 48);
-
+                    padding-right: 30px;
                     &:hover {
                         color: white;
                     }
@@ -183,7 +189,13 @@
                     justify-content: center;
                     align-items: center;
                     perspective: 10px;
-
+                    @include for-tablet {
+                        width: 40%;
+                        @include for-mobile {
+                            width: 40%;
+                        }
+    
+                    }
                     &:hover {
                         box-shadow: 2px 0px 50px 2px rgb(240, 230, 211);
                     }
@@ -201,8 +213,6 @@
     text-align: center;
     align-items: center;
 
-    &_texte {
-        font-size: 50px !important;
-    }
+    
 
 }

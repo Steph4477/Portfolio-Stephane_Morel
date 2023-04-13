@@ -6,7 +6,7 @@ import Profil from '../components/Profil';
 import Competences from '../components/Competences';
 import CarteProjet from '../components/CarteProjet';
 import VideoPlayer from '../components/VideoPlayer';
-import monkeyVideo from '../assets/monkey.mp4';
+//import monkeyVideo from '../assets/monkey.mp4';
 
 const onglets = [
   {
@@ -27,7 +27,8 @@ const onglets = [
   {
     titre: 'Loisirs',
     icone: faHeart,
-    contenu: <VideoPlayer src={monkeyVideo}/>
+    contenu: <VideoPlayer />                    //<VideoPlayer src={monkeyVideo}/>
+     
   },
 ];
 
@@ -48,7 +49,7 @@ export default function Home() {
             onClick={() => changerOnglet(index)}
           >
             <FontAwesomeIcon icon={onglet.icone} className="onglet_service_titre_icone" />
-            <h2 className="onglet_service_titre">{onglet.titre}</h2>
+            <h3 className="onglet_service_titre">{onglet.titre}</h3>
           </button>
         ))}
       </section>
