@@ -4,10 +4,9 @@
 
 
 import photo from '../assets/photo_mini.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import rotateIcon from '../assets/rotateIcon.svg'
 
+import rotateIcon from '../assets/rotateIcon.svg'
+import github from '../assets/github.svg'
 
 export default function CarteDeVisite() {
 
@@ -40,7 +39,7 @@ export default function CarteDeVisite() {
                                     <div className="CarteDeVisite_container_carte_recto_contenu_article_rotate_image">
                                         <img src={rotateIcon} alt="icone retorner"  />
                                     </div>
-                                    <div className="CarteDeVisite_container_carte_recto_contenu_article_rotate_txt">Retourner </div>
+                                    <div className="CarteDeVisite_container_carte_recto_contenu_article_rotate_txt"><p>Retourner</p> </div>
                                 </div>
 
                             </div>
@@ -59,12 +58,12 @@ export default function CarteDeVisite() {
 
                                     Vous pouvez voir le code de mes projets réalisés en cliquant sur le button.</p>
 
-                                    <div className="CarteDeVisite_container_carte_verso_contenu_article_button">
-                                        <button className="CarteDeVisite_container_carte_verso_contenu_article_button_icone">
-                                            <FontAwesomeIcon icon={faGithub} />
+
+                                        <button className="CarteDeVisite_container_carte_verso_contenu_article_button">
+                                            <img src={github} className='CarteDeVisite_container_carte_verso_contenu_article_button_icone_github' alt="icone github"/>
                                             <a className="CarteDeVisite_container_carte_verso_contenu_article_button_icone_texte" href="https://github.com/Steph4477"> GitHub</a>
                                         </button>
-                                    </div>
+                                    
                                 </article >
                             </div >
                         </section >

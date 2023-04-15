@@ -212,8 +212,13 @@
                             background: rgb(192, 20, 230);
                             border-radius: 20px;
                             display: flex;
+                            justify-content: center;
                             align-items: center;
-                            justify-content: space-around;
+                            
+
+                            
+                            
+                            
 
                             &:hover {
                                 cursor: pointer;
@@ -225,6 +230,10 @@
                             &_icone {
                                 &_texte {
                                     margin-left: 10px;
+                                    
+                                    
+                                    
+                                    
                                 }
                             }
 

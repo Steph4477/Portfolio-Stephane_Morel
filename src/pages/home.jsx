@@ -1,33 +1,32 @@
 import React, { useState } from 'react';
-import { faUser, faFileAlt, faBriefcase, faHeart } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Profil from '../components/Profil';
-import Competences from '../components/Competences';
-import CarteProjet from '../components/CarteProjet';
-import VideoPlayer from '../components/VideoPlayer';
-import monkeyVideo from '../assets/monkey.mp4';
+
+import Profil from '../../src/components/Profil';
+import Competences from '../../src/components/Competences';
+import CarteProjet from '../../src/components/CarteProjet';
+import VideoPlayer from '../../src/components/VideoPlayer';
+
 
 const onglets = [
   {
     titre: 'Profil',
-    icone: faUser,
+    icone: "",
     contenu: <Profil />
   },
   {
     titre: 'Compétences',
-    icone: faFileAlt,
+    icone: "",
     contenu: <Competences />
   },
   {
     titre: 'Projets',
-    icone: faBriefcase,
+    icone: "",
     contenu: <CarteProjet />
   },
   {
     titre: 'Loisirs',
-    icone: faHeart,
-    contenu: <VideoPlayer src={monkeyVideo}/>
+    icone: "",
+    contenu: <VideoPlayer />
   },
 ];
 
@@ -47,7 +46,7 @@ export default function Home() {
             className={`onglet_service ${index === ongletActif ? 'active' : ''}`}
             onClick={() => changerOnglet(index)}
           >
-            <FontAwesomeIcon icon={onglet.icone} className="onglet_service_titre_icone" />
+            {/*<FontAwesomeIcon icon={onglet.icone} className="onglet_service_titre_icone" />*/}
             <h2 className="onglet_service_titre">{onglet.titre}</h2>
           </button>
         ))}
