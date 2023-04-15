@@ -4,7 +4,7 @@
 
 /* Mixin pour les styles tablette */
 @mixin for-tablet {
-    @media screen and (min-width: 587px) and (max-width: 1360px) {
+    @media screen and (min-width: 587px) and (max-width: 920px) {
         @content;
     }
 }

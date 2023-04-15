@@ -21,23 +21,28 @@ body {
 }
 
 h1 {
-  font-size: 60px;
-  
+  font-size: 40px;
+
 
   @include for-tablet {
     font-size: 35px;
-
-
   }
+
+  @include for-mobile {
+    font-size: 30px
+  }
+
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin-left: 5px;
-  @include for-tablet{
+
+  @include for-tablet {
     font-size: 25px;
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 25px
   }
 }
@@ -46,10 +51,12 @@ a {
   text-decoration: none;
   color: black;
   font-size: 25px;
-  @include for-tablet{
+
+  @include for-tablet {
     font-size: 20px
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 18px
   }
 
@@ -57,10 +64,12 @@ a {
 
 p {
   font-size: 30px;
-  @include for-tablet{
+
+  @include for-tablet {
     font-size: 25px
   }
-  @include for-mobile{
+
+  @include for-mobile {
     font-size: 20px
   }
 }

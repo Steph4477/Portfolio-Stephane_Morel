@@ -20,6 +20,14 @@
     min-height: 600px;
     border-radius: 30px;
 
+    @include for-mobile {
+        max-width: 400px;
+        min-width: 300px;
+        max-height: 500px;
+        min-height: 400px;
+    }
+
+
 
     &_recto_fond {
         box-shadow: 4px 4px 8px 4px rgb(99, 93, 93);
@@ -62,7 +70,7 @@
         transform-style: preserve-3d;
 
         &_fond {
-        
+
             overflow: hidden;
             height: 100%;
             width: 100%;
@@ -110,27 +118,34 @@
     text-align: center;
 
     &_contenu {
-        &_titre{
-           
+        &_titre {
+
             width: 650px;
             height: 350px;
-            &_h{
+            @include for-mobile{
+                width: 325px;
+                height: 175px;
+            }
+
+            &_h {
                 position: absolute;
-                top: 250px;
-                right: 20px;
+                top: 150px;
+                right: 0;
                 font-size: 35px;
                 padding: 2px;
                 border-radius: 25px;
                 transform: rotate(-45deg);
                 color: blueviolet;
-              
-               
                 background-color: rgba(0, 179, 255, 0.2);
+                @include for-mobile{
+                    top: 10px;
+                }
             }
         }
+
         &_article {
             &_space {
-                height: 150px;
+                height: 50px;
             }
 
             &_button {
@@ -183,6 +198,7 @@
     padding: 4vh;
     margin: 0 auto;
     width: 80%;
+
     &_container {
         display: flex;
         flex-wrap: wrap;
