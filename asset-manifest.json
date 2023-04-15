@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Stephane_Morel/static/css/main.4e6741f5.css",
-    "main.js": "/Portfolio-Stephane_Morel/static/js/main.2cc2f723.js",
+    "main.css": "/Portfolio-Stephane_Morel/static/css/main.56a7bd3f.css",
+    "main.js": "/Portfolio-Stephane_Morel/static/js/main.003115dc.js",
     "static/js/787.28cb0dcd.chunk.js": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js",
     "static/media/lapanthere.png": "/Portfolio-Stephane_Morel/static/media/lapanthere.587cfc08791408cf69da.png",
     "static/media/captureBooki.png": "/Portfolio-Stephane_Morel/static/media/captureBooki.365f38b4256f143f2104.png",
@@ -15,19 +15,19 @@
     "static/media/github.svg": "/Portfolio-Stephane_Morel/static/media/github.407c621f00b9925785041f7dff76a0f1.svg",
     "static/media/photoshop.svg": "/Portfolio-Stephane_Morel/static/media/photoshop.76c9ccfc41e42378781d663b9be063f0.svg",
     "static/media/facebook.svg": "/Portfolio-Stephane_Morel/static/media/facebook.ef824524d63a006c5931918fd6a1cd47.svg",
-    "index.html": "/Portfolio-Stephane_Morel/index.html",
     "static/media/mongodb.svg": "/Portfolio-Stephane_Morel/static/media/mongodb.389aa18a9b02da23f02b77ddfc9d12be.svg",
+    "index.html": "/Portfolio-Stephane_Morel/index.html",
     "static/media/twitter.svg": "/Portfolio-Stephane_Morel/static/media/twitter.fe06d572bd13680e66f4d31fc7cf1832.svg",
     "static/media/javascript.svg": "/Portfolio-Stephane_Morel/static/media/javascript.865c831e9be0fc4b6b6d2ea470b3fa64.svg",
     "static/media/express.svg": "/Portfolio-Stephane_Morel/static/media/express.13e4b3884f318c648bfe0207aa64c8dc.svg",
     "static/media/rotateIcon.svg": "/Portfolio-Stephane_Morel/static/media/rotateIcon.c3057e07abbcdb0556a6ea200d187e76.svg",
     "static/media/linkedin.svg": "/Portfolio-Stephane_Morel/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
-    "main.4e6741f5.css.map": "/Portfolio-Stephane_Morel/static/css/main.4e6741f5.css.map",
-    "main.2cc2f723.js.map": "/Portfolio-Stephane_Morel/static/js/main.2cc2f723.js.map",
+    "main.56a7bd3f.css.map": "/Portfolio-Stephane_Morel/static/css/main.56a7bd3f.css.map",
+    "main.003115dc.js.map": "/Portfolio-Stephane_Morel/static/js/main.003115dc.js.map",
     "787.28cb0dcd.chunk.js.map": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e6741f5.css",
-    "static/js/main.2cc2f723.js"
+    "static/css/main.56a7bd3f.css",
+    "static/js/main.003115dc.js"
   ]
 }
