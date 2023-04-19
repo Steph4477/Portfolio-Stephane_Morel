@@ -4,8 +4,8 @@
 
 
 import photo from '../assets/photo_mini.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
+
 import rotateIcon from '../assets/rotateIcon.svg'
 
 
@@ -61,7 +61,7 @@ export default function CarteDeVisite() {
 
                                     <div className="CarteDeVisite_container_carte_verso_contenu_article_button">
                                         <button className="CarteDeVisite_container_carte_verso_contenu_article_button_icone">
-                                            <FontAwesomeIcon icon={faGithub} />
+                                            
                                             <a className="CarteDeVisite_container_carte_verso_contenu_article_button_icone_texte" href="https://github.com/Steph4477"> GitHub</a>
                                         </button>
                                     </div>
