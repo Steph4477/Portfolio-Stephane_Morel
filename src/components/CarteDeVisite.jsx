@@ -49,7 +49,7 @@ export default function CarteDeVisite() {
                             <div className="CarteDeVisite_container_carte_verso_fond"></div>
                             <div className="CarteDeVisite_container_carte_verso_contenu">
                                 <article className="CarteDeVisite_container_carte_verso_contenu_article">
-                                    <p> Je conçois ce projet afin de faciliter ma future recherche d'alternance
+                                    <p>Je conçois ce projet afin de faciliter ma future recherche d'alternance
                                     (page d'accueil de mon portfolio).
 
                                     Vous pouvez voir le code de mes projets réalisés en cliquant sur le button.</p>
