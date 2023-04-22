@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-
-
 import Profil from '../components/Profil';
 import Competences from '../components/Competences';
 import CarteProjet from '../components/CarteProjet';
 import VideoPlayer from '../components/VideoPlayer';
-import monkeyVideo from '../assets/monkey.mp4';
 import CarteDeVisite from '../components/CarteDeVisite';
 import Cache from '../components/Cache';
 
