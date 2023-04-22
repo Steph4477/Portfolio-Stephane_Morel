@@ -1,24 +1,40 @@
 @import '../mixins';
 
+.home_mobile{
+  display: none;
+  @include for-mobile {
+    display: block; 
+  }
+  &_presentation{
+    margin-top: 5vh;
+  }
+}
+
 .home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  
 
   @include for-tablet {
-    margin-top: 10vh;
-  }
-  @include for-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 10vh;
   }
 
+  @include for-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
   &_onglet {
-    margin-top: 5vh;
+    margin-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: rgb(238, 236, 236);
-    box-shadow: 13px -15px 21px 3px rgba(138, 133, 138, 1);
+    @include box-shadow;
     width: 70%;
     height: 100px;
 
@@ -26,8 +42,8 @@
       width: 90%;
     }
     @include for-mobile {
-      width: 90%;
-      display: flex;
+      
+      display: none;
     }
   }
 }
@@ -46,8 +62,7 @@
     width: 50%;
   }
   @include for-mobile {
-    width: 70%;
-    flex-direction: column;
+    display: none;
   }
 
   &:hover {
@@ -55,17 +70,11 @@
   }
 
   &.active {
-    color: black;
-    height: 90%;
+    
+    height: 100%;
     font-weight: bold;
     background-color: white;
-    margin-bottom: -10px;
-    border-radius: 10px 10px 0px 0px;
-  }
-
-  &_titre_icone{
-    width: 20px;
-    height: 20px;
+   
   }
 
 }

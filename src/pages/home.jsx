@@ -6,27 +6,29 @@ import Competences from '../components/Competences';
 import CarteProjet from '../components/CarteProjet';
 import VideoPlayer from '../components/VideoPlayer';
 import monkeyVideo from '../assets/monkey.mp4';
+import CarteDeVisite from '../components/CarteDeVisite';
+import Cache from '../components/Cache';
 
 const onglets = [
   {
     titre: 'Profil',
-    
+
     contenu: <Profil />
   },
   {
     titre: 'Compétences',
-    
+
     contenu: <Competences />
   },
   {
     titre: 'Projets',
-   
+
     contenu: <CarteProjet />
   },
   {
     titre: 'Loisirs',
-   
-    contenu: <VideoPlayer src={monkeyVideo}/>
+
+    contenu: <VideoPlayer src={monkeyVideo} />
   },
 ];
 
@@ -39,6 +41,14 @@ export default function Home() {
 
   return (
     <div className="home">
+      <div className='home_mobile'>
+        <div className='home_mobile_cv'>
+          <CarteDeVisite />
+        </div>
+        <div className='home_mobile_presentation'>
+          <Cache />
+        </div>
+      </div>
       <section className="home_onglet">
         {onglets.map((onglet, index) => (
           <button
@@ -46,7 +56,7 @@ export default function Home() {
             className={`onglet_service ${index === ongletActif ? 'active' : ''}`}
             onClick={() => changerOnglet(index)}
           >
-            
+
             <h2 className="onglet_service_titre">{onglet.titre}</h2>
           </button>
         ))}

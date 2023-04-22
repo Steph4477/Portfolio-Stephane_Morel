@@ -1,6 +1,8 @@
+@import '../variables';
+
 .CarteDeVisite {
     display: flex;
-    margin-top: 80px;
+   
     justify-content: center;
     width: 100%;
     display: flex;
@@ -8,6 +10,14 @@
     &_container {
         width: 100%;
         padding: 5vh;
+
+        @include for-mobile {
+            margin-top: 5vh;
+            padding: 0;
+           display: flex;
+           justify-content: center;
+
+        }
 
         &_carte {
             display: flex;
@@ -19,17 +29,21 @@
             position: relative;
             scale: (1);
             animation: apparition 1s linear;
-            padding-top: 20px;
-            width: 80%;
-            height: 550px;
+            height: 500px;
+            width: 400px;
             border-radius: 30px;
-            box-shadow: 15px 15px 15px grey;
-            @include for-tablet{
-                width: 100%;
+            @include box-shadow;
+
+            @include for-tablet {
+                width: 350px;
+                height: 400px;
             }
-            @include for-mobile{
-                width: 100%;
+
+            @include for-mobile {
+                width: 250px;
+                height: 350px;
             }
+
             &:hover {
                 transform: rotateY(180deg);
                 transition: 1.5s;
@@ -37,7 +51,7 @@
 
             h1 {
                 width: 100%;
-                color: rgb(138, 182, 215);
+                color: $blue;
             }
 
             &_recto,
@@ -47,7 +61,7 @@
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                border: 4px solid black;
+               
                 border-radius: 30px;
                 width: 100%;
                 height: 100%;
@@ -58,9 +72,13 @@
                     height: 100%;
                     width: 100%;
                     border-radius: 25px;
-                    box-shadow: 4px 4px 8px 4px rgb(99, 93, 93);
-                    background: #586b6b;
-                    border: 4px solid white;
+                    @include box-shadow;
+                    background-color: $bg-Text;
+                   
+                    @include for-mobile{
+                        border: 0.2px solid black;
+                        
+                    }
                 }
 
                 &_contenu {
@@ -73,14 +91,14 @@
 
 
                     &_article {
-                        color: white;
+                        color: black;
                         font-family: Arial, Helvetica, sans-serif;
                         text-align: center;
                         text-shadow: 2px 2px black;
 
                         &_rotate {
 
-                            margin-top: 100px;
+                            margin-top: 50px;
                             font-size: 30px;
                             height: 100px;
                             display: flex;
@@ -94,17 +112,12 @@
 
                             }
 
-                            &_txt {
 
-
-                                font-size: 35px;
-                            }
                         }
                     }
 
                     &_image {
                         object-fit: cover;
-                        border: 2px solid white;
                     }
                 }
             }
@@ -120,61 +133,63 @@
 
                         &_texte {
                             h1 {
-                                
-                              text-shadow: 3px 3px 5px rgb(1, 65, 83);
-                            }
-                            h2{
+
                                 text-shadow: 3px 3px 5px rgb(1, 65, 83);
                             }
-                          }
-                          
+
+                            h2 {
+                                text-shadow: 3px 3px 5px rgb(1, 65, 83);
+                            }
+                        }
+
 
 
 
                         &_image {
                             text-align: center;
                             margin-right: 30px;
-                            height: 30%;
+
                             width: 100%;
 
 
                             img {
-                                background: linear-gradient(45deg, rgb(76, 5, 112), rgb(31, 50, 227), rgb(31, 211, 227));
-                                width: 150px;
-                                height: 150px;
+                                background: $blue;
+                                width: 90px;
+                                height: 100px;
                                 border-radius: 50%;
-                                border: 5px solid white;
+                                border: 5px solid black;
+                                @include for-mobile{
+                                    border: 2px solid black;
+                                }
                             }
                         }
 
                         &_rotate {
-                            width: 100%;
-                            height: 30%;
+                           
+                            
+                            @include for-mobile {
+                                
+                                margin-top: 20px;
+
+                            }
 
                             &_image {
-                                width: 90%;
-                                height: 30%;
-                                text-align: right;
 
-                                img {
-                                    width: 45px;
-                                    height: 45px;
-                                    
+                                img {                                    
+                                    display: flex;                           
+                                    text-align: center;
+                                    width: 40px;
+                                    @include for-mobile {
+                                        width: 30px;
+                                    }
                                 }
-                                @include for-tablet{
-                                    width: 40%;
-                                }
-                                @include for-mobile{
-                                    width: 40%;
-                                }
+    
                             }
 
                             &_txt {
-                                margin-left: 1vh;
-                                width: 10%;
-                                height: 100%;
+                                margin-left: 1vh;                               
                                 text-align: center;
-                                color: white;
+                                color: black;
                                 text-shadow: 3px 3px 5px rgb(1, 65, 83);
                             }
                         }
@@ -195,21 +210,19 @@
                     justify-content: center;
                     transform: translateZ(100px); // Décalage du texte
 
-                    &_article {
-                        width: 100%;
-                        height: 100%;
+                    &_article{
                         padding: 40px 20px 50px 20px;
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: center;
-                        align-items: center;
-                        text-align: left;
+                        align-items: center; 
+                        text-shadow: 3px 3px 5px rgb(1, 65, 83);                      
 
                         &_button {
                             margin-top: 5vh;
                             width: 50%;
                             height: 40px;
-                            background: rgb(192, 20, 230);
+                            background: $blue;
                             border-radius: 20px;
                             display: flex;
                             align-items: center;
@@ -217,8 +230,8 @@
 
                             &:hover {
                                 cursor: pointer;
-                                box-shadow: 0px 4px 4px 2px #242323;
-                                background-color: rgb(216, 120, 237);
+                                @include box-shadow;
+                                filter: brightness(0.9);
                                 perspective: 8px;
                             }
 

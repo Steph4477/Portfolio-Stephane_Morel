@@ -12,57 +12,52 @@
 }
 
 body {
-
-  background-color: rgb(227, 227, 230);
-  width: 98%;
+  //background-color: rgb(227, 227, 230);
   margin: 0 auto;
   margin-bottom: 5vh;
-
 }
 
 h1 {
-  font-size: 60px;
-  
+  font-size: 30px;
 
   @include for-tablet {
-    font-size: 35px;
+    font-size: 25px;
+  }
 
-
+  @include for-mobile {
+    font-size: 20px;
   }
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 25px;
   margin-left: 5px;
-  @include for-tablet{
-    font-size: 25px;
+
+  @include for-tablet {
+    font-size: 20px;
   }
-  @include for-mobile{
-    font-size: 25px
+
+  @include for-mobile {
+    font-size: 18px
   }
 }
 
 a {
   text-decoration: none;
   color: black;
-  font-size: 25px;
-  @include for-tablet{
-    font-size: 20px
-  }
-  @include for-mobile{
-    font-size: 18px
+  font-size: 20px;
+
+  @include for-tablet {
+    font-size: 18px;
   }
 
+  @include for-mobile {
+    font-size: 16px;
+  }
 }
 
 p {
-  font-size: 30px;
-  @include for-tablet{
-    font-size: 25px
-  }
-  @include for-mobile{
-    font-size: 20px
-  }
+  font-size: 22px;
 }
 
 button {
@@ -70,14 +65,5 @@ button {
   border: none;
   cursor: pointer;
   background-color: transparent;
-
-
 }
 
-.header_nav {
-  color: white;
-
-  a {
-    color: white;
-  }
-}

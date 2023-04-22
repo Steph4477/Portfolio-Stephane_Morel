@@ -14,7 +14,7 @@ export default function CarteDeVisite() {
     return (
         <>
 
-            <main className="CarteDeVisite">
+            
                 <div className="CarteDeVisite_container">
                     <div className="CarteDeVisite_container_carte">
                         <section className="CarteDeVisite_container_carte_recto">
@@ -50,12 +50,9 @@ export default function CarteDeVisite() {
                             <div className="CarteDeVisite_container_carte_verso_fond"></div>
                             <div className="CarteDeVisite_container_carte_verso_contenu">
                                 <article className="CarteDeVisite_container_carte_verso_contenu_article">
-                                    <p>Actuellement en reconversion professionnelle avec openclassrooms
-                                    et pôle emploi
-                                    (jusqu'à fin Avril 2023).
-
-                                    Je conçois ce projet afin de faciliter ma future recherche d'alternance
-                                    (page d'accueil de mon portfolio).
+                                    <p>Je réalise ce projet dans le but de simplifier ma recherche d'emploi ou d'alternance.
+                                    <br />
+                                    <br />
 
                                     Vous pouvez voir le code de mes projets réalisés en cliquant sur le button.</p>
 
@@ -71,7 +68,7 @@ export default function CarteDeVisite() {
                     </div >
 
                 </div >
-            </main >
+           
 
         </>
     )
