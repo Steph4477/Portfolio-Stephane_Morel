@@ -1,4 +1,5 @@
 @import '../variables';
+@import '../mixins';
 
 .CarteDeVisite {
     display: flex;
@@ -9,10 +10,8 @@
 
     &_container {
         width: 100%;
-        padding: 5vh;
-
         @include for-mobile {
-            margin-top: 5vh;
+            margin-top: 10vh;
             padding: 0;
            display: flex;
            justify-content: center;
@@ -60,8 +59,7 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                position: absolute;
-               
+                position: absolute;             
                 border-radius: 30px;
                 width: 100%;
                 height: 100%;
@@ -74,11 +72,6 @@
                     border-radius: 25px;
                     @include box-shadow;
                     background-color: $bg-Text;
-                   
-                    @include for-mobile{
-                        border: 0.2px solid black;
-                        
-                    }
                 }
 
                 &_contenu {
@@ -91,10 +84,8 @@
 
 
                     &_article {
-                        color: black;
                         font-family: Arial, Helvetica, sans-serif;
                         text-align: center;
-                        text-shadow: 2px 2px black;
 
                         &_rotate {
 
@@ -134,11 +125,11 @@
                         &_texte {
                             h1 {
 
-                                text-shadow: 3px 3px 5px rgb(1, 65, 83);
+                                @include shadow-text;
                             }
 
                             h2 {
-                                text-shadow: 3px 3px 5px rgb(1, 65, 83);
+                                @include shadow-text;
                             }
                         }
 
@@ -153,14 +144,11 @@
 
 
                             img {
-                                background: $blue;
+                               
                                 width: 90px;
-                                height: 100px;
                                 border-radius: 50%;
-                                border: 5px solid black;
-                                @include for-mobile{
-                                    border: 2px solid black;
-                                }
+                               
+                               
                             }
                         }
 
@@ -187,10 +175,13 @@
                             }
 
                             &_txt {
-                                margin-left: 1vh;                               
+                                margin-left: 1vh;
+                                font-size: 18px; 
+                                font-style: italic;
+                                font-weight: 600;                              
                                 text-align: center;
                                 color: black;
-                                text-shadow: 3px 3px 5px rgb(1, 65, 83);
+                               
                             }
                         }
                     }
@@ -222,17 +213,16 @@
                             margin-top: 5vh;
                             width: 50%;
                             height: 40px;
-                            background: $blue;
+                            background: $bg-Text;
+                            @include box-shadow;
                             border-radius: 20px;
                             display: flex;
                             align-items: center;
-                            justify-content: space-around;
+                            justify-content: center;
 
                             &:hover {
                                 cursor: pointer;
-                                @include box-shadow;
-                                filter: brightness(0.9);
-                                perspective: 8px;
+                                @include push;
                             }
 
                             &_icone {

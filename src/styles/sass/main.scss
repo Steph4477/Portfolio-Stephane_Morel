@@ -58,6 +58,12 @@ a {
 
 p {
   font-size: 22px;
+  @include for-tablet{
+    font-size: 20px;
+  }
+  @include for-mobile{
+    font-size: 18px;
+  }
 }
 
 button {

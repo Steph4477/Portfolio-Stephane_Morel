@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Nav from './components/Nav';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './pages/home';
 import './styles/Index.scss';
 
@@ -11,12 +12,13 @@ import './styles/Index.scss';
 export default function App() {
   return (
     <div className="App">
-      <Nav />
+      <Header />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }

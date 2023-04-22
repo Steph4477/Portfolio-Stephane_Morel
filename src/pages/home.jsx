@@ -48,6 +48,9 @@ export default function Home() {
         <div className='home_mobile_presentation'>
           <Cache />
         </div>
+        <div className='home_mobile_projet'>
+          <CarteProjet />
+        </div>
       </div>
       <section className="home_onglet">
         {onglets.map((onglet, index) => (
