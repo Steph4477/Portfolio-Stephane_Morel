@@ -12,20 +12,28 @@
 }
 
 body {
-
-  background-color: rgb(227, 227, 230);
-  width: 98%;
+  //background-color: rgb(227, 227, 230);
   margin: 0 auto;
   margin-bottom: 5vh;
-
 }
 
 h1 {
+<<<<<<< HEAD
   font-size: 40px;
 
 
   @include for-tablet {
     font-size: 35px;
+=======
+  font-size: 30px;
+
+  @include for-tablet {
+    font-size: 25px;
+  }
+
+  @include for-mobile {
+    font-size: 20px;
+>>>>>>> vCard
   }
 
   @include for-mobile {
@@ -35,6 +43,7 @@ h1 {
 }
 
 h2 {
+<<<<<<< HEAD
   font-size: 30px;
   margin-left: 5px;
 
@@ -44,6 +53,17 @@ h2 {
 
   @include for-mobile {
     font-size: 20px
+=======
+  font-size: 25px;
+  margin-left: 5px;
+
+  @include for-tablet {
+    font-size: 20px;
+  }
+
+  @include for-mobile {
+    font-size: 18px
+>>>>>>> vCard
   }
 }
 
@@ -52,15 +72,24 @@ a {
   color: black;
   font-size: 20px;
 
+<<<<<<< HEAD
   
 
   @include for-mobile {
     font-size: 18px
+=======
+  @include for-tablet {
+    font-size: 18px;
+>>>>>>> vCard
   }
 
+  @include for-mobile {
+    font-size: 16px;
+  }
 }
 
 p {
+<<<<<<< HEAD
   font-size: 25px;
 
   @include for-tablet {
@@ -69,6 +98,14 @@ p {
 
   @include for-mobile {
     font-size: 20px
+=======
+  font-size: 22px;
+  @include for-tablet{
+    font-size: 20px;
+  }
+  @include for-mobile{
+    font-size: 18px;
+>>>>>>> vCard
   }
 }
 
@@ -77,14 +114,5 @@ button {
   border: none;
   cursor: pointer;
   background-color: transparent;
-
-
 }
 
-.header_nav {
-  color: white;
-
-  a {
-    color: white;
-  }
-}

@@ -4,6 +4,12 @@
 
 
 import photo from '../assets/photo_mini.png';
+<<<<<<< HEAD
+=======
+
+
+import rotateIcon from '../assets/rotateIcon.svg'
+>>>>>>> vCard
 
 import rotateIcon from '../assets/rotateIcon.svg'
 import github from '../assets/github.svg'
@@ -13,7 +19,7 @@ export default function CarteDeVisite() {
     return (
         <>
 
-            <main className="CarteDeVisite">
+            
                 <div className="CarteDeVisite_container">
                     <div className="CarteDeVisite_container_carte">
                         <section className="CarteDeVisite_container_carte_recto">
@@ -29,8 +35,7 @@ export default function CarteDeVisite() {
 
                                     <div className="CarteDeVisite_container_carte_recto_contenu_article_texte">
                                         <h1 className="CarteDeVisite_container_carte_recto_contenu_article_texte_titre">Stéphane Morel</h1>
-                                        <h2 className="CarteDeVisite_container_carte_recto_contenu_article_texte_nom">Développeur, intégrateur
-                                            web</h2>
+                                        <h2 className="CarteDeVisite_container_carte_recto_contenu_article_texte_nom">Intégrateur, développeur web</h2>
                                     </div>
 
                                 </article>
@@ -49,6 +54,7 @@ export default function CarteDeVisite() {
                             <div className="CarteDeVisite_container_carte_verso_fond"></div>
                             <div className="CarteDeVisite_container_carte_verso_contenu">
                                 <article className="CarteDeVisite_container_carte_verso_contenu_article">
+<<<<<<< HEAD
                                     <p>Je conçois ce projet afin de faciliter ma future recherche d'alternance
                                     (page d'accueil de mon portfolio).
 
@@ -57,6 +63,17 @@ export default function CarteDeVisite() {
 
                                         <button className="CarteDeVisite_container_carte_verso_contenu_article_button">
                                             <img src={github} className='CarteDeVisite_container_carte_verso_contenu_article_button_icone_github' alt="icone github"/>
+=======
+                                    <p>Je réalise ce projet dans le but de simplifier ma recherche d'emploi ou d'alternance.
+                                    <br />
+                                    <br />
+
+                                    Vous pouvez voir le code de mes projets réalisés en cliquant sur le button.</p>
+
+                                    <div className="CarteDeVisite_container_carte_verso_contenu_article_button">
+                                        <button className="CarteDeVisite_container_carte_verso_contenu_article_button_icone">
+                                            
+>>>>>>> vCard
                                             <a className="CarteDeVisite_container_carte_verso_contenu_article_button_icone_texte" href="https://github.com/Steph4477"> GitHub</a>
                                         </button>
                                     
@@ -66,7 +83,7 @@ export default function CarteDeVisite() {
                     </div >
 
                 </div >
-            </main >
+           
 
         </>
     )

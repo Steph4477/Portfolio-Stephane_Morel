@@ -1,5 +1,9 @@
 @mixin for-tablet {
+<<<<<<< HEAD
     @media (max-width: 920px) {
+=======
+    @media screen and (min-width: 587px) and (max-width: 920px) {
+>>>>>>> vCard
         @content;
     }
 }
@@ -8,4 +12,17 @@
     @media (max-width: 768px) {
         @content;
     }
+}
+
+/* Mixin Box shadow */
+@mixin box-shadow {
+    box-shadow: 4px 4px 8px 4px rgb(99, 93, 93);
+}
+
+@mixin shadow-text {
+    text-shadow: 3px 3px 5px rgb(1, 65, 83);
+}
+
+@mixin push {
+    box-shadow: 1px 2px 2px 2px rgb(160, 152, 152);
 }

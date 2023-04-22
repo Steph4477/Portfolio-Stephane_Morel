@@ -1,0 +1,159 @@
+@import '../mixins';
+@import '../variables';
+
+
+.header {
+    margin-top: 1vh;
+    
+
+    &_nav {
+        display: flex;
+
+        @include for-tablet {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @include for-mobile {
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+
+        &_contact {
+            width: 50%;
+           
+            @include for-tablet {
+                width: 100%;
+                margin-top: 5vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @include for-mobile {
+                width: 100%;
+               display: flex;
+               flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-top: 5vh;
+            }
+
+            &_tel {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                @include box-shadow;
+                background: $bg-Text;
+                border: 1px solid white;
+                border-radius: 20px;
+                width: 300px;
+                height: 50px;
+
+                @include for-tablet {
+                    justify-content: center;
+                    height: 40px;
+                    width: 200px;
+                    align-items: center;
+                }
+
+                @include for-mobile {
+                    height: 30px;
+                    width: 150px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                &:hover{                                    
+                    @include push;                 
+                }
+
+                img {
+                    width: 35px;
+
+                    @include for-mobile {
+                        width: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                &_icone {
+                    margin-right: 1vh;
+                }
+            }
+
+            &_mail {
+                margin-top: 2vh;
+                width: 300px;
+                height: 50px;
+                @include box-shadow;
+                background: $bg-Text;
+                border: 1px solid white;
+                border-radius: 20px;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                @include for-tablet {
+                    justify-content: center;
+                    height: 40px;
+                }
+
+                @include for-mobile {
+                    justify-content: center;
+                    width: 150px;
+                    height: 30px;
+                }
+
+                &:hover{
+                   @include push;
+                }
+
+                &_icone {
+                    margin-right: 1vh;
+                    text-align: center;
+                    width: 35px;
+
+                    @include for-tablet {
+                        width: 30px;
+                    }
+
+                    @include for-mobile {
+                        width: 25px;
+                    }
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                &_lien {
+
+                    display: flex;
+                    text-align: center;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    @include for-tablet {
+                        justify-content: center;
+                    }
+
+                    @include for-mobile {
+                        justify-content: center;
+
+                    }
+
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
