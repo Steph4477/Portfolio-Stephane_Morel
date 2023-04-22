@@ -4,7 +4,7 @@
 import { useState } from 'react';
 
 
-export default function buttonColapse({titre}) {
+export default function Collapse({titre}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {
