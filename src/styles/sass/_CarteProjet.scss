@@ -1,13 +1,51 @@
-.CarteDeProjet {
+.CarteDeproject {
     display: flex;
     margin-bottom: 50vh;
     justify-content: center;
     border: 10px solid black;
+
+    &_container {
+        &_title {
+            color: $blue;
+            font-size: 55px;
+            font-weight: bold;
+        }
+
+        @include for-mobile {
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        &_bouton {
+            width: 100%;
+            display: flex;
+
+            justify-content: center;
+
+            img {
+
+                background-color: $bg-Text;
+                width: 40px;
+                padding: 4px;
+                @include box-shadow;
+                border-radius: 5px;
+
+                &:hover {
+                    @include push;
+                }
+            }
+        }
+
+    }
 }
 
-.CarteDeProjet_container_carte {
+.CarteDeproject_container_carte {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     transition: 2s ease-in-out;
     transform-style: preserve-3d;
     position: relative;
@@ -61,7 +99,7 @@
         transform-style: preserve-3d;
 
         &_fond {
-        
+
             overflow: hidden;
             height: 100%;
             width: 100%;
@@ -84,7 +122,7 @@
 
                 &_paragraphe {
                     padding-top: 40px;
-                    
+
                 }
             }
 
@@ -104,16 +142,17 @@
     }
 }
 
-.CarteDeProjet_container_carte_verso {
+.CarteDeproject_container_carte_verso {
     transform: rotateY(180deg);
     text-align: center;
 
     &_contenu {
-        &_titre{
-           
+        &_titre {
+
             width: 300px;
             height: 150px;
-            &_h{
+
+            &_h {
                 position: absolute;
                 top: 20px;
                 right: 0px;
@@ -122,11 +161,12 @@
                 border-radius: 25px;
                 transform: rotate(-45deg);
                 color: blueviolet;
-              
-               
+
+
                 background-color: rgba(0, 179, 255, 0.2);
             }
         }
+
         &_article {
             &_space {
                 height: 150px;
@@ -151,16 +191,38 @@
     }
 }
 
+.boutons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    &_title{
+        display: flex;
+        color: $blue;
+        align-items: center;
+    }
+    &_bouton-D{
+        display: flex;
+        color: $blue;
+        align-items: center;
+        
+    }
+    &_bouton-G{
+        display: flex;
+        color: $blue;
+        align-items: center;
+    }
+    
+}
 
-
-.CarteDeProjet_container_carte_verso_contenu_article_button:hover {
+.CarteDeproject_container_carte_verso_contenu_article_button:hover {
     cursor: pointer;
     @include box-shadow;
     background-color: rgb(216, 120, 237);
     perspective: 8px;
 }
 
-.CarteDeProjet_container_carte:hover {
+.CarteDeproject_container_carte:hover {
     transform: rotateY(180deg);
     transition: 1.5s;
 
@@ -174,7 +236,7 @@
 
 
 
-.CardProjet {
+.Cardproject {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -182,6 +244,7 @@
     padding: 4vh;
     margin: 0 auto;
     width: 80%;
+
     &_container {
         display: flex;
         flex-wrap: wrap;
@@ -189,7 +252,7 @@
     }
 }
 
-.CarteDeProjet_container_carte {
+.CarteDeproject_container_carte {
 
     margin-bottom: 10vh;
     width: calc(30% - 100px); // même largeur pour chaque carte

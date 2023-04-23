@@ -1,5 +1,5 @@
-import phone from '../assets/phone.png';
-import mail from '../assets/mail.png';
+import phone from '../assets/phone.svg';
+import mail from '../assets/mail.svg';
 
 export default function Header(){
     return (

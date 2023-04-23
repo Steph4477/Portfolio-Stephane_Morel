@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Presentation from "./Presentation";
-import Skills from "./Skills";
 import Description from "./Description";
+
 
 export default function Cache() {
   // état initial
@@ -11,7 +11,7 @@ export default function Cache() {
   // hook d'effet pour écouter l'événement scroll
   useEffect(() => {
     function handleScroll() {
-      setIsScrolled(window.pageYOffset > window.innerHeight * 0.5);
+      setIsScrolled(window.pageYOffset > window.innerHeight * 0.3);
     }
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -27,7 +27,10 @@ export default function Cache() {
     <div className="cache-container">
       {showPresentation && <Presentation />}
       <Description />
-      <Skills />
+      
+
+
+     
     </div>
   );
 }
