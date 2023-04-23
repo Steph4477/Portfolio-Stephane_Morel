@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import Profil from '../components/Profil';
 import Competences from '../components/Competences';
-import CarteProjet from '../components/CarteProjet';
+import CarteProjet from '../components/Caroussel';
 import VideoPlayer from '../components/VideoPlayer';
 import monkeyVideo from '../assets/monkey.mp4';
 import Caroussel from '../components/Caroussel';
 import CacheDescription from '../components/CacheDescription';
+// import CarteDeProjet from '../components/CarteProjet';
+import CarteDeVisite from '../components/CarteDeVisite';
+
 
 const onglets = [
   {
