@@ -74,8 +74,7 @@
                 img {
                     width: 35px;
 
-                    @include for-mobile {
-                        width: 20px;
+                    @include for-mobile {                     
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -125,7 +124,7 @@
                     }
 
                     @include for-mobile {
-                        width: 25px;
+                        width: 28px;
                     }
 
                     &:hover {
@@ -149,9 +148,7 @@
 
                     }
 
-                    img {
-                        width: 25px;
-                    }
+                    
                 }
             }
         }

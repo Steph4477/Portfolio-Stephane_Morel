@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import Profil from '../components/Profil';
 import Competences from '../components/Competences';
-import CarteProjet from '../components/CarteProjet';
+import CarteProjet from '../components/Caroussel';
 import VideoPlayer from '../components/VideoPlayer';
+import monkeyVideo from '../assets/monkey.mp4';
+import Caroussel from '../components/Caroussel';
+import CacheDescription from '../components/CacheDescription';
+// import CarteDeProjet from '../components/CarteProjet';
 import CarteDeVisite from '../components/CarteDeVisite';
-import Cache from '../components/Cache';
+
 
 const onglets = [
   {
@@ -43,10 +47,11 @@ export default function Home() {
           <CarteDeVisite />
         </div>
         <div className='home_mobile_presentation'>
-          <Cache />
+          <CacheDescription />
         </div>
-        <div className='home_mobile_projet'>
-          <CarteProjet />
+        <div className='home_mobile_carousel'>
+        
+          <Caroussel />
         </div>
       </div>
       <section className="home_onglet">

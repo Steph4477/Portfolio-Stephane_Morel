@@ -1,15 +1,17 @@
+///////////////////////////////////////////////////////////////////////////
+///                         Responsive                                  ///
+///////////////////////////////////////////////////////////////////////////
+
+/* Mixin pour les styles tablette */
 @mixin for-tablet {
-<<<<<<< HEAD
-    @media (max-width: 920px) {
-=======
     @media screen and (min-width: 587px) and (max-width: 920px) {
->>>>>>> vCard
         @content;
     }
 }
 
+/* Mixin pour les styles mobile */
 @mixin for-mobile {
-    @media (max-width: 768px) {
+    @media screen and (max-width: 586px) {
         @content;
     }
 }
