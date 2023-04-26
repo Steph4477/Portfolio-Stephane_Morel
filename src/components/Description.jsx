@@ -18,7 +18,8 @@ export default function Description() {
       <p>
         Merci de prendre le temps de consulter mon portfolio.<br />
         <br />Je suis un développeur web passionné par les nouvelles technologies et la programmation,
-        spécialisé dans le développement front-end avec des compétences en back-end et bases de données.
+        spécialisé dans le développement front-end avec des compétences en back-end et bases de données.< br/>
+        <br/>
         Mon objectif est de créer des sites web modernes, fonctionnels et accessibles en utilisant
         principalement les technologies<br /> 
         <strong className="word visible">{words[currentWordIndex]}</strong>

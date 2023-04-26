@@ -18,14 +18,14 @@ body {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 35px;
 
   @include for-tablet {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   @include for-mobile {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 

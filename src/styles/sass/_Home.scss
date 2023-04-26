@@ -31,16 +31,16 @@
 
 
   &_onglet {
-    margin-top: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgb(238, 236, 236);
-    @include box-shadow;
-    width: 70%;
-    height: 100px;
-
+    
+    display: none;
     @include for-tablet {
+      margin-top: 10vh;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: rgb(238, 236, 236);
+      @include box-shadow;     
+      height: 100px;
       width: 90%;
     }
     @include for-mobile {
@@ -52,16 +52,17 @@
 
 .onglet_service {
 
-  display: flex;
-  align-items: center;
-  background: none;
-  border: none;
-  color: gray;
-  cursor: pointer;
-  width: 90%;
+  display: none;
+ 
 
   @include for-tablet {
     width: 50%;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: gray;
+    cursor: pointer;
   }
   @include for-mobile {
     display: none;

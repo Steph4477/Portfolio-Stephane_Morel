@@ -54,6 +54,7 @@ export default function Home() {
           <Caroussel />
         </div>
       </div>
+      
       <section className="home_onglet">
         {onglets.map((onglet, index) => (
           <button
@@ -66,7 +67,7 @@ export default function Home() {
           </button>
         ))}
       </section>
-
+      
       <section className="home_card">
         <div className="collapse_content">
           <div className="collapse_content_contenu">
