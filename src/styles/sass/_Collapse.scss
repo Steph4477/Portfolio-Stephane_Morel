@@ -29,22 +29,20 @@
 }
 
 .collapse_content_contenu {
-    @include box-shadow;
+    @include for-tablet{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    
+  
     overflow: hidden;
     transition: height 0.3s ease;
     margin: 0 auto;
+    }
     
 }
 
 
 
 .collapse_content.open {
-    width: 100%;
+   
     
     /* ajustez la hauteur selon vos besoins */
     transition: 0.8s ease-in-out;

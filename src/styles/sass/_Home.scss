@@ -46,7 +46,6 @@
       background-color: $bg-Text;
     }
     @include for-mobile {
-      
       display: none;
     }
   }
@@ -58,7 +57,7 @@
  
 
   @include for-tablet {
-    width: 50%;
+    width: 30%;
     display: flex;
     align-items: center;
     background: none;

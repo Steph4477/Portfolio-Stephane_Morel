@@ -1,34 +1,36 @@
+.CardProjet{
+    
+    display: flex;
+    flex-wrap: wrap; 
+    &_container{
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
 .CarteProjet {
     display: flex;
     margin-bottom: 50vh;
     justify-content: center;
     border: 10px solid black;
-
+    
     &_container {
+        
         &_title {
             color: $blue;
             font-size: 55px;
             font-weight: bold;
         }
 
-        @include for-mobile {
-
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
-        }
+        
 
         &_bouton {
             width: 100%;
             display: none;
 
-            @include for-mobile{
-                width: 80%;
-                display: block;
-                justify-content: center;
-            }
+            
 
             img {
                 background-color: $bg-Text;
@@ -52,20 +54,14 @@
     transform-style: preserve-3d;
     position: relative;
     scale: 1;
-    animation: apparition 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    padding-top: 20px;    
-    max-width: 400px;
-    min-width: 400px;
-    max-height: 500px;
-    min-height: 500px;
+    animation: apparition 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 350px;
+    min-height: 350px;
     border-radius: 30px;
-    @include for-mobile{
-        min-width: 250px;
-        max-width: 250px;
-        min-height: 350px;
-        max-height: 350px;
-    }
-
+    margin: 5vh;
+    
     &_recto_fond {
         @include box-shadow;
         background: #2e2f2f;
@@ -100,18 +96,20 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        border: 4px solid black;
+        //border: 1px solid black;
         border-radius: 30px;
         backface-visibility: hidden;
         transform-style: preserve-3d;
+        margin: 1vh;
 
+        
         &_fond {
-            overflow: hidden;
             height: 100%;
             width: 100%;
             border-radius: 25px;
             @include box-shadow;
             background-color: $bg-Text;
+            overflow: hidden;
             img{
                 width: 100%;
                 object-fit: cover;
@@ -165,7 +163,7 @@
 
             &_h {
                 position: absolute;
-                top: 20px;
+                top: 100px;
                 right: 0px;
                 font-size: 20px;
                 padding: 2px;
@@ -180,7 +178,7 @@
 
         &_article {
             &_space {
-                height: 150px;
+                height: 100px;
             }
 
             &_button {
@@ -206,7 +204,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 200px;
+    
     &_title{
         display: flex;
         color: $blue;
@@ -249,9 +247,9 @@
 
 .Cardproject {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 200px; // espace entre les cartes
     padding: 4vh;
     margin: 0 auto;
     width: 80%;
