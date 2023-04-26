@@ -41,7 +41,7 @@ export default function CarteDeVisite() {
                                 <br />
                                 <br />
 
-                                Vous pouvez voir le code de mes projets réalisés en cliquant sur le button.</p>
+                                Vous pouvez voir le code de mes projets réalisés en cliquant sur le bouton.</p>
 
                             <div className="CarteDeVisite_container_carte_verso_contenu_article_button">
                                 <button className="CarteDeVisite_container_carte_verso_contenu_article_button_icone">

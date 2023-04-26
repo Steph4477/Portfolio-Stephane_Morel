@@ -39,7 +39,7 @@ const datas = [
   }
 ];
 
-export default function CarteDeproject() {
+export default function Caroussel() {
   const [currentProjectId, setCurrentProjectId] = useState(0);
 
   const handleNextButtonClick = () => {
@@ -57,11 +57,11 @@ export default function CarteDeproject() {
   const project = datas.find((project) => project.id === currentProjectId);
 
   return (
-    <div className="CarteDeproject_container">
-      <div className="CarteDeproject_container_title">
+    <div className="Caroussel_container">
+      <div className="Caroussel_container_title">
        
       </div>
-      <div className="CarteDeproject_container_bouton">
+      <div className="Caroussel_container_bouton">
         
         <Boutons
           onPrevButtonClick={handlePrevButtonClick}
@@ -70,36 +70,36 @@ export default function CarteDeproject() {
           </div>
         
       
-      <div key={project.id} className="CarteDeproject_container_carte">
-        <section className="CarteDeproject_container_carte_recto">
-          <div className="CarteDeproject_container_carte_recto_fond">
+      <div key={project.id} className="Caroussel_container_carte">
+        <section className="Caroussel_container_carte_recto">
+          <div className="Caroussel_container_carte_recto_fond">
             <img
-              className="CarteDeproject_container_carte_recto_fond_image"
+              className="Caroussel_container_carte_recto_fond_image"
               src={project.imageRecto}
               alt=""
             />
           </div>
         </section>
-        <section className="CarteDeproject_container_carte_verso">
-          <div className="CarteDeproject_container_carte_verso_fond">
+        <section className="Caroussel_container_carte_verso">
+          <div className="Caroussel_container_carte_verso_fond">
             <img
-              className="CarteDeproject_container_carte_verso_fond_image"
+              className="Caroussel_container_carte_verso_fond_image"
               src={project.imageVerso}
               alt=""
             />
           </div>
-          <div className="CarteDeproject_container_carte_verso_contenu">
-            <div className="CarteDeproject_container_carte_verso_contenu_titre">
-              <div className="CarteDeproject_container_carte_verso_contenu_titre_h">
+          <div className="Caroussel_container_carte_verso_contenu">
+            <div className="Caroussel_container_carte_verso_contenu_titre">
+              <div className="Caroussel_container_carte_verso_contenu_titre_h">
                 {project.titre}
               </div>
             </div>
-            <article className="CarteDeproject_container_carte_verso_contenu_article">
-              <div className="CarteDeproject_container_carte_verso_contenu_article_button">
-                <button className="CarteDeproject_container_carte_verso_contenu_article_button_icone">
+            <article className="Caroussel_container_carte_verso_contenu_article">
+              <div className="Caroussel_container_carte_verso_contenu_article_button">
+                <button className="Caroussel_container_carte_verso_contenu_article_button_icone">
                   <img src={internet} alt="" />
                   <a
-                    className="CarteDeproject_container_carte_verso_contenu_article_button_icone_texte"
+                    className="Caroussel_container_carte_verso_contenu_article_button_icone_texte"
                     alt={project.titre}
                     href={project.lien}
                   >

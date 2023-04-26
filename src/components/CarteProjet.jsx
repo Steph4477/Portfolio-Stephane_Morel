@@ -22,32 +22,32 @@ const titres = [
 const imagesRecto = [booki, ohmyfood, lapanthere, "image4"];
 const imagesVerso = [bookiV, ohmyfoodV, lapanthereV, "image4"];
 
-export default function CarteDeProjet() {
+export default function CarteProjet() {
 
   const cartes = [];
 
   for (let i = 0; i < titres.length; i++) {
     cartes.push(
-      <div key={i} className="CarteDeProjet_container_carte">
-        <section className="CarteDeProjet_container_carte_recto">
-          <div className="CarteDeProjet_container_carte_recto_fond">
-            <img className='CarteDeProjet_container_carte_recto_fond_image' src={imagesRecto[i]} alt="" />
+      <div key={i} className="CarteProjet_container_carte">
+        <section className="CarteProjet_container_carte_recto">
+          <div className="CarteProjet_container_carte_recto_fond">
+            <img className='CarteProjet_container_carte_recto_fond_image' src={imagesRecto[i]} alt="" />
           </div>
         </section>
-        <section className="CarteDeProjet_container_carte_verso">
-          <div className="CarteDeProjet_container_carte_verso_fond">
-            <img className='CarteDeProjet_container_carte_verso_fond_image' src={imagesVerso[i]} alt="" />
+        <section className="CarteProjet_container_carte_verso">
+          <div className="CarteProjet_container_carte_verso_fond">
+            <img className='CarteProjet_container_carte_verso_fond_image' src={imagesVerso[i]} alt="" />
           </div>
-          <div className="CarteDeProjet_container_carte_verso_contenu">
-            <div className="CarteDeProjet_container_carte_verso_contenu_titre">
-              <div className="CarteDeProjet_container_carte_verso_contenu_titre_h">{titres[i]}</div>
+          <div className="CarteProjet_container_carte_verso_contenu">
+            <div className="CarteProjet_container_carte_verso_contenu_titre">
+              <div className="CarteProjet_container_carte_verso_contenu_titre_h">{titres[i]}</div>
             </div>
-            <article className="CarteDeProjet_container_carte_verso_contenu_article">
-              <div className='CarteDeProjet_container_carte_verso_contenu_article_space'></div>
-              <div className="CarteDeProjet_container_carte_verso_contenu_article_button">
-                <button className="CarteDeProjet_container_carte_verso_contenu_article_button_icone">
+            <article className="CarteProjet_container_carte_verso_contenu_article">
+              <div className='CarteProjet_container_carte_verso_contenu_article_space'></div>
+              <div className="CarteProjet_container_carte_verso_contenu_article_button">
+                <button className="CarteProjet_container_carte_verso_contenu_article_button_icone">
                   <img src={internet} alt=""/>
-                  <a className="CarteDeProjet_container_carte_verso_contenu_article_button_icone_texte" alt={titres[i]}
+                  <a className="CarteProjet_container_carte_verso_contenu_article_button_icone_texte" alt={titres[i]}
                     href={liens[i]}>Site internet
                   </a>
                 </button>

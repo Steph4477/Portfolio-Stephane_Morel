@@ -35,13 +35,15 @@
     display: none;
     @include for-tablet {
       margin-top: 10vh;
+      margin-bottom: 5vh;
+      border-radius: 25px;
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background-color: rgb(238, 236, 236);
       @include box-shadow;     
-      height: 100px;
+      height: 50px;
       width: 90%;
+      background-color: $bg-Text;
     }
     @include for-mobile {
       
@@ -61,7 +63,6 @@
     align-items: center;
     background: none;
     border: none;
-    color: gray;
     cursor: pointer;
   }
   @include for-mobile {
@@ -76,8 +77,10 @@
     
     height: 100%;
     font-weight: bold;
-    background-color: white;
-   
+    border-radius: 25px;
+    background-color: $blue;
+    color: white;
+    
   }
 
 }
