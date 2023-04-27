@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <div className='home_mobile'>
+      <section className='home_mobile'>
         <div className='home_mobile_cv'>
           <CarteDeVisite />
         </div>
@@ -53,9 +53,9 @@ export default function Home() {
         
           <Caroussel />
         </div>
-      </div>
+      </section>
       
-      <section className="home_onglet">
+      <section className="home_tablet">
         {onglets.map((onglet, index) => (
           <button
             key={index}

@@ -1,51 +1,15 @@
 .CardProjet{
-    
+    margin-top: 5vh;
     display: flex;
     flex-wrap: wrap; 
     &_container{
-        
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 }
-.CarteProjet {
-    display: flex;
-    margin-bottom: 50vh;
-    justify-content: center;
-    border: 10px solid black;
-    
-    &_container {
-        
-        &_title {
-            color: $blue;
-            font-size: 55px;
-            font-weight: bold;
-        }
 
-        
-
-        &_bouton {
-            width: 100%;
-            display: none;
-
-            
-
-            img {
-                background-color: $bg-Text;
-                width: 40px;
-                padding: 4px;
-                @include box-shadow;
-                border-radius: 5px;
-                &:hover {
-                    @include push;
-                }
-            }
-        }
-
-    }
-}
 
 .CarteProjet_container_carte {
     display: flex;
@@ -96,13 +60,11 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        //border: 1px solid black;
         border-radius: 30px;
         backface-visibility: hidden;
         transform-style: preserve-3d;
         margin: 1vh;
-
-        
+       
         &_fond {
             height: 100%;
             width: 100%;
@@ -157,7 +119,6 @@
 
     &_contenu {
         &_titre {
-
             width: 180px;
             height: 150px;
 
@@ -168,11 +129,7 @@
                 font-size: 20px;
                 padding: 2px;
                 border-radius: 25px;
-               
-                
                 text-shadow: 3px 3px 5px rgb(1, 65, 83);
-
-                
             }
         }
 
@@ -240,10 +197,6 @@
 .icone-retourner {
     color: white;
 }
-
-
-
-
 
 .Cardproject {
     display: flex;
