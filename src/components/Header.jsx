@@ -12,7 +12,7 @@ export default function Header(){
                     </div>
                     <div className="header_nav_contact_mail">
                         <img src={mail} className="fas fa-envelope header_nav_contact_mail_icone" alt="icone mail"/>
-                        <a href="mailto:morelstephane4026@neuf.fr" className="header_nav_contact_mail_lien" title="boîte mail">Contact</a>
+                        <a href="mailto:morelstephane4026@neuf.fr" className="header_nav_contact_mail_lien" title="boîte mail">Contactez-moi</a>
                     </div>
                 </div>
             </section>

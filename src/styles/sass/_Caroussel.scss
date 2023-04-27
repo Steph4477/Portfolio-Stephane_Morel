@@ -5,31 +5,23 @@
     border: 10px solid black;
     background-color: aqua;
     width: 100%;
+
     &_container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
         &_title {
             color: $blue;
             font-size: 55px;
             font-weight: bold;
         }
 
-        @include for-mobile {
-
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
-        }
-
         &_bouton {
-            width: 100%;
-            display: none;
-
-            @include for-mobile{
-                width: 80%;
-                display: block;
-                justify-content: center;
-            }
+            width: 80%;
+            display: block;
+            justify-content: center;
 
             img {
                 background-color: $bg-Text;
@@ -37,6 +29,7 @@
                 padding: 4px;
                 @include box-shadow;
                 border-radius: 5px;
+
                 &:hover {
                     @include push;
                 }
@@ -54,42 +47,12 @@
     position: relative;
     scale: 1;
     animation: apparition 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    padding-top: 20px;    
-    max-width: 400px;
-    min-width: 400px;
-    max-height: 500px;
-    min-height: 500px;
+    padding-top: 20px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 350px;
+    max-height: 350px;
     border-radius: 30px;
-    @include for-mobile{
-        min-width: 250px;
-        max-width: 250px;
-        min-height: 350px;
-        max-height: 350px;
-    }
-
-    &_recto_fond {
-        @include box-shadow;
-        background: #2e2f2f;
-        border: 4px solid white;
-
-        &_image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    &_verso_fond {
-        @include box-shadow;
-        background: #caf8f8;
-        border: 4px solid white;
-
-        &_image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
 
     &_recto,
     &_verso {
@@ -107,13 +70,16 @@
 
         &_fond {
             overflow: hidden;
+            border: 4px solid white;
             height: 100%;
             width: 100%;
             border-radius: 25px;
             @include box-shadow;
             background-color: $bg-Text;
-            img{
+
+            img {
                 width: 100%;
+                height: 100%;
                 object-fit: cover;
             }
         }
@@ -127,29 +93,14 @@
             transform: translateZ(100px); // Décalage du texte
 
             &_article {
-               
                 font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
-                
 
                 &_paragraphe {
                     padding-top: 20px;
                 }
             }
-
-            &_image {
-                object-fit: cover;
-                width: 100px;
-                height: 100px;
-                border: 2px solid white;
-                border-radius: 50%;
-            }
         }
-    }
-
-    &_profil {
-        width: 50%;
-        height: 100%;
     }
 }
 
@@ -159,33 +110,22 @@
 
     &_contenu {
         &_titre {
-
-            width: 180px;
-            height: 150px;
+            width: 90%;
+            
 
             &_h {
-                position: absolute;
-                top: 20px;
-                right: 0px;
                 font-size: 20px;
-                padding: 2px;
-                border-radius: 25px;
-               
-                
                 text-shadow: 3px 3px 5px rgb(1, 65, 83);
-
-                
             }
         }
 
         &_article {
-            &_space {
-                height: 150px;
-            }
+           
 
             &_button {
                 border: 3px solid white;
                 background: #2e2f2f;
+                margin-top: 5vh;
                 border-radius: 20px;
 
                 &_icone {
@@ -202,28 +142,31 @@
     }
 }
 
-.boutons{
+.boutons {
     width: 100%;
     display: flex;
     justify-content: space-around;
     height: 200px;
-    &_title{
+
+    &_title {
         display: flex;
         color: $blue;
         align-items: center;
     }
-    &_bouton-D{
+
+    &_bouton-D {
         display: flex;
         color: $blue;
         align-items: center;
-        
+
     }
-    &_bouton-G{
+
+    &_bouton-G {
         display: flex;
         color: $blue;
         align-items: center;
     }
-    
+
 }
 
 .Caroussel_container_carte_verso_contenu_article_button:hover {
@@ -236,35 +179,12 @@
 .Caroussel_container_carte:hover {
     transform: rotateY(180deg);
     transition: 1.5s;
-
 }
 
 .icone-retourner {
     color: white;
 }
 
-
-
-
-
-.Cardproject {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 200px; // espace entre les cartes
-    padding: 4vh;
-    margin: 0 auto;
-    width: 80%;
-
-    &_container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
-
 .Caroussel_container_carte {
-
     margin-bottom: 10vh;
-    width: calc(30% - 100px); // même largeur pour chaque carte
 }

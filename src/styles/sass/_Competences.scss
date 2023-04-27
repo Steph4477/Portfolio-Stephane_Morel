@@ -2,18 +2,19 @@
   animation: clique 1500ms ease-in-out;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  
   margin-bottom: 5vh;
   margin-top: 5vh;
-
+  width: 90%;
   &_article {
-    width: 47%;
+    width: 46%;
     background-color: $bg-Text;
     margin: 1%;
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    @include box-shadow;
+    @include push;
 
     @include for-mobile {
       display: none;

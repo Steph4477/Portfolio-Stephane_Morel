@@ -31,7 +31,7 @@
 .collapse_content_contenu {
     @include for-tablet{
     display: flex;
-  
+        justify-content: space-around;
     overflow: hidden;
     transition: height 0.3s ease;
     margin: 0 auto;
