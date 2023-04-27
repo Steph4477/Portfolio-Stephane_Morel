@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Stephane_Morel/static/css/main.fffb2e93.css",
-    "main.js": "/Portfolio-Stephane_Morel/static/js/main.b5e36cf7.js",
+    "main.css": "/Portfolio-Stephane_Morel/static/css/main.4baa998d.css",
+    "main.js": "/Portfolio-Stephane_Morel/static/js/main.3e6de0b6.js",
     "static/js/787.28cb0dcd.chunk.js": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js",
     "static/media/monkey.mp4": "/Portfolio-Stephane_Morel/static/media/monkey.add9063b1bde96d7dd74.mp4",
     "static/media/lapanthere.png": "/Portfolio-Stephane_Morel/static/media/lapanthere.587cfc08791408cf69da.png",
@@ -23,12 +23,12 @@
     "static/media/express.svg": "/Portfolio-Stephane_Morel/static/media/express.13e4b3884f318c648bfe0207aa64c8dc.svg",
     "static/media/rotateIcon.svg": "/Portfolio-Stephane_Morel/static/media/rotateIcon.4cf1f46b634d0c03ddd11d7e4f7674f1.svg",
     "static/media/linkedin.svg": "/Portfolio-Stephane_Morel/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
-    "main.fffb2e93.css.map": "/Portfolio-Stephane_Morel/static/css/main.fffb2e93.css.map",
-    "main.b5e36cf7.js.map": "/Portfolio-Stephane_Morel/static/js/main.b5e36cf7.js.map",
+    "main.4baa998d.css.map": "/Portfolio-Stephane_Morel/static/css/main.4baa998d.css.map",
+    "main.3e6de0b6.js.map": "/Portfolio-Stephane_Morel/static/js/main.3e6de0b6.js.map",
     "787.28cb0dcd.chunk.js.map": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fffb2e93.css",
-    "static/js/main.b5e36cf7.js"
+    "static/css/main.4baa998d.css",
+    "static/js/main.3e6de0b6.js"
   ]
 }
