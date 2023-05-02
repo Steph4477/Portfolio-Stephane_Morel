@@ -1,0 +1,25 @@
+.main_desktop{
+    
+   
+    
+    &_home{
+       
+        height: 800px;
+        background-color: pink;
+    }
+    &_portfolio{
+       
+        height: 800px;
+        background-color: red;
+    }
+    &_about{
+       
+        height: 800px;
+        background-color: yellow;
+    }
+    &_contact{
+       
+        height: 800px;
+        background-color: green;
+    }
+}
