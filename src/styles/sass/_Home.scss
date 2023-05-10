@@ -1,0 +1,129 @@
+@import '../mixins';
+
+.home_mobile {
+  display: none;
+
+  @include for-mobile {
+    display: block;
+  }
+
+  &_presentation {
+    margin-top: 5vh;
+    transition: 2s ease-in-out;
+
+  }
+}
+
+.home {
+
+
+  @include for-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+  }
+
+  @include for-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  &_tablet {
+
+    display: none;
+    @include for-tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    @include for-mobile {
+      display: none;
+    }
+
+    &_collapse {
+
+      @include for-tablet {
+        margin-top: 10vh;
+        border-radius: 25px;
+        display: flex;
+
+        
+        @include box-shadow;
+        height: 50px;
+        width: 90%;
+        background-color: $bg-Text;
+      }
+    }
+    &_footer{
+      width: 100%;
+      padding: -5vh;
+    }
+  }
+
+  &_desktop {
+    display: flex;
+    width: 100%;
+   
+    &_aside{
+     
+      width: 20%;
+    }
+    &_main{
+      width: 80%;
+    }
+    @include for-mobile {
+      display: none;
+
+    }
+
+    @include for-tablet {
+      display: none;
+    }
+
+  }
+}
+
+.tab_service {
+
+  display: none;
+
+
+  @include for-tablet {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  @include for-mobile {
+    display: none;
+  }
+
+  &:hover {
+    color: black;
+  }
+
+  &.active {
+
+    height: 100%;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: $blue;
+    color: white;
+
+  }
+  &_title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

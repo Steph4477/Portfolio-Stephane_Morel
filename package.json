@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "homepage": "https://github.com/Steph4477/Portfolio-Stephane_Morel",
+=======
+  "homepage": "https://Steph4477.github.io/Portfolio-Stephane_Morel",
+>>>>>>> vCard
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +15,7 @@
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0",
+    "react-router-dom": "^6.11.0",
     "react-scripts": "^5.0.1",
     "react-spring": "^9.7.1",
     "sass": "^1.61.0",

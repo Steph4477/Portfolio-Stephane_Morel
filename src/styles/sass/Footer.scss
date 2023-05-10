@@ -1,0 +1,51 @@
+.footer {
+    width: 100%;
+   
+    background-color: $bg-Text;
+   
+    &_rs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 5vh;
+        
+       
+
+        &_icone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            &-twitter {
+                color: #1DA1F2;
+                padding: 1%;
+            }
+
+            &-facebook {
+                color: #3B5998;
+                padding: 1%;
+            }
+
+            &-instagram {
+                color: #C32AA3;
+                padding: 1%;
+            }
+
+            &-linkedin {
+                color: #007BB5;
+                padding: 1%;
+            }
+
+            &-tiktok {
+                padding: 1%;
+                color: white;
+            }
+        }
+        &_texte{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 5vh;
+        }
+    }
+}
