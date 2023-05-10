@@ -1,70 +1,84 @@
 .aside {
     width: 20%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
     top: 0;
     bottom: 0;
-    overflow-y: hidden;
-    background-color: $bg-Text;
-  
+    background-color: #f6f6f6;
+
     &_profil {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 2vh;
-  
-      &_photo {
-        width: 80px;
-        object-fit: cover;
-        border-radius: 50%;
-        background-color: $blue;
-        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vh;
+        background-color: $bg-Text;
         @include push;
-      }
-  
-      &_title {
-        margin-top: 22px;
-        font-weight: bold;
-        font-size: 20px;
-      }
-    }
-  
-    &_menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 1rem;
-      margin-top: 15vh;
-  
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-  
-      li {
-        margin-bottom: 3vh;
-        cursor: pointer;
-        padding: 0 1rem;
-  
-        a {
-          color: #000;
-          text-decoration: none;
-  
-          
+        border-bottom-right-radius: 25px 25px;
+
+        &_photo {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: $blue;
+            border: 2px solid white;
+            @include push;
         }
-      }
+
+        &_title {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5vh;
+        }
     }
-  
+
+    &_menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 3vh;
+            cursor: pointer;
+            padding: 0 1rem;
+
+            a {
+                color: #000;
+                text-decoration: none;
+                text-shadow: 2px 2px rgb(211, 210, 210);
+                &:focus{
+                    color: white;
+                    background-color: $blue;
+                    border-radius: 25px;
+                    padding: 5px 30px 5px 30px;
+                    @include push;
+                    
+                    text-shadow: none;
+                }
+
+            }
+        }
+    }
+
     .aside_RS {
-      margin-bottom: 1vh;
-      
-      &_footer{
-        transform: scale(0.8);
-      }
+        margin-bottom: -5vh;
+        margin-top: -5vh;
+        background-color: $bg-Text;
+        @include push;
+        border-top-right-radius: 25px 25px;
+        &_footer {
+            transform: scale(0.8);
+
+        }
     }
-  }
-  
+}

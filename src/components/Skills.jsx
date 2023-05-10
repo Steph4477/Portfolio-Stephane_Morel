@@ -13,7 +13,7 @@ import inkscapeIcon from "../assets/inkscape.svg";
 import figmaIcon from "../assets/figma.svg";
 import gitIcon from "../assets/git.svg";
 
-const competences = [
+const skills = [
   {
     titre: "Frontend",
     icones: [
@@ -47,23 +47,23 @@ const competences = [
   },
 ];
 
-export default function Competences() {
+export default function Skills() {
   return (
-    <div className="competences_container">
-      {competences.map((competence, index) => (
-        <article className="competences_container_article" key={index}>
-          <h2 className="competences_container_article_titre">
-            {competence.titre}
+    <div className="skills_container">
+      {skills.map((skill, index) => (
+        <article className="skills_container_article" key={index}>
+          <h2 className="skills_container_article_titre">
+            {skill.titre}
           </h2>
-          <div className="competences_container_article_icons">
-            {competence.icones.map((icone, index) => (
-              <div className="competences_container_article_icon" key={index}>
+          <div className="skills_container_article_icons">
+            {skill.icones.map((icone, index) => (
+              <div className="skills_container_article_icon" key={index}>
                 <img
                   src={icone.image}
                   alt={icone.titre}
-                  className="competences_container_article_icon_image"
+                  className="skills_container_article_icon_image"
                 />
-                <p className="competences_container_article_icon_titre">
+                <p className="skills_container_article_icon_titre">
                   {icone.titre}
                 </p>
               </div>

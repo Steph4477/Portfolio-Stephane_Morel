@@ -59,8 +59,6 @@ export default function CarteProjet() {
     );
   }
 
-  console.log(cartes); // Affiche les cartes dans la console
-
   return (
     <main className="CardProjet">
       <div className="CardProjet_container">

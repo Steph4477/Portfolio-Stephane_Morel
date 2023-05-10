@@ -1,4 +1,4 @@
-.Caroussel {
+.carousel {
     display: flex;
     margin-bottom: 50vh;
     justify-content: center;
@@ -39,7 +39,7 @@
     }
 }
 
-.Caroussel_container_carte {
+.carousel_container_carte {
     display: flex;
     justify-content: center;
     transition: 2s ease-in-out;
@@ -104,7 +104,7 @@
     }
 }
 
-.Caroussel_container_carte_verso {
+.carousel_container_carte_verso {
     transform: rotateY(180deg);
     text-align: center;
 
@@ -169,14 +169,14 @@
 
 }
 
-.Caroussel_container_carte_verso_contenu_article_button:hover {
+.carousel_container_carte_verso_contenu_article_button:hover {
     cursor: pointer;
     @include box-shadow;
     background-color: rgb(216, 120, 237);
     perspective: 8px;
 }
 
-.Caroussel_container_carte:hover {
+.carousel_container_carte:hover {
     transform: rotateY(180deg);
     transition: 1.5s;
 }
@@ -185,6 +185,6 @@
     color: white;
 }
 
-.Caroussel_container_carte {
+.carousel_container_carte {
     margin-bottom: 10vh;
 }

@@ -8,7 +8,7 @@ import internet from '../assets/internet.png';
 import bookiV from '../assets/BookiV.png';
 import Boutons from './Boutons';
 
-const datas = [
+const projects = [
   {
     id: 0,
     lien: "https://steph4477.github.io/booki/",
@@ -39,67 +39,69 @@ const datas = [
   }
 ];
 
-export default function Caroussel() {
-  const [currentProjectId, setCurrentProjectId] = useState(0);
+export default function Carousel() {
+  // initialize ID current to 0
+  const [currentProjectId, setCurrentProjectId] = useState(0)
 
+  // Check project.id into projects == current project
+  const project = projects.find((project) => project.id === currentProjectId)
+
+  // If the current project id < total number of projects -1,
+  // the function increments the current project id by 1.
   const handleNextButtonClick = () => {
-    if (currentProjectId < datas.length - 1) {
-      setCurrentProjectId(currentProjectId + 1);
+    if (currentProjectId < projects.length - 1) {
+      setCurrentProjectId(currentProjectId + 1)
     }
-  };
+  }
 
   const handlePrevButtonClick = () => {
     if (currentProjectId > 0) {
       setCurrentProjectId(currentProjectId - 1);
     }
-  };
-
-  const project = datas.find((project) => project.id === currentProjectId);
+  }
 
   return (
-    <div className="Caroussel_container">
-      <div className="Caroussel_container_title">
-       
+    <div className="carousel_container">
+      <div className="carousel_container_title">
+
       </div>
-      <div className="Caroussel_container_bouton">
-        
+      <div className="carousel_container_bouton">
+        {/* associate the click of the button to its function */}
         <Boutons
-          onPrevButtonClick={handlePrevButtonClick}
-         
-          onNextButtonClick={handleNextButtonClick}/>
-          </div>
-        
-      
-      <div key={project.id} className="Caroussel_container_carte">
-        <section className="Caroussel_container_carte_recto">
-          <div className="Caroussel_container_carte_recto_fond">
+          prevButtonClick={handlePrevButtonClick}
+          nextButtonClick={handleNextButtonClick} />
+      </div>
+
+      <div key={project.id} className="carousel_container_carte">
+        <section className="carousel_container_carte_recto">
+          <div className="carousel_container_carte_recto_fond">
             <img
-              className="Caroussel_container_carte_recto_fond_image"
+              className="carousel_container_carte_recto_fond_image"
               src={project.imageRecto}
               alt=""
             />
           </div>
         </section>
-        <section className="Caroussel_container_carte_verso">
-          <div className="Caroussel_container_carte_verso_fond">
+        <section className="carousel_container_carte_verso">
+          <div className="carousel_container_carte_verso_fond">
             <img
-              className="Caroussel_container_carte_verso_fond_image"
+              className="carousel_container_carte_verso_fond_image"
               src={project.imageVerso}
               alt=""
             />
           </div>
-          <div className="Caroussel_container_carte_verso_contenu">
-            <div className="Caroussel_container_carte_verso_contenu_titre">
-              <div className="Caroussel_container_carte_verso_contenu_titre_h">
+          <div className="carousel_container_carte_verso_contenu">
+            <div className="carousel_container_carte_verso_contenu_titre">
+              <div className="carousel_container_carte_verso_contenu_titre_h">
                 {project.titre}
               </div>
             </div>
-            <article className="Caroussel_container_carte_verso_contenu_article">
-              <div className="Caroussel_container_carte_verso_contenu_article_button">
-                <button className="Caroussel_container_carte_verso_contenu_article_button_icone">
+            <article className="carousel_container_carte_verso_contenu_article">
+              <div className="carousel_container_carte_verso_contenu_article_button">
+                <button className="carousel_container_carte_verso_contenu_article_button_icone">
                   <img src={internet} alt="" />
                   <a
-                    className="Caroussel_container_carte_verso_contenu_article_button_icone_texte"
+                    className="carousel_container_carte_verso_contenu_article_button_icone_texte"
                     alt={project.titre}
                     href={project.lien}
                   >
@@ -112,6 +114,6 @@ export default function Caroussel() {
         </section>
       </div>
     </div>
-  );
+  )
 }
 

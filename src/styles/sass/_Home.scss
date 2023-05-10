@@ -62,12 +62,14 @@
     }
     &_footer{
       width: 100%;
+      padding: -5vh;
     }
   }
 
   &_desktop {
     display: flex;
     width: 100%;
+   
     &_aside{
      
       width: 20%;
@@ -87,7 +89,7 @@
   }
 }
 
-.onglet_service {
+.tab_service {
 
   display: none;
 
@@ -118,5 +120,10 @@
     color: white;
 
   }
-
+  &_title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -1,24 +1,25 @@
-.main_desktop{
-    
-   
-    
-    &_home{
-       
+.main_desktop {
+    &_homedesk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         height: 800px;
-        background-color: pink;
+        width: 100%;
+        line-height: 200px;
     }
-    &_portfolio{
-       
+
+    &_portfolio {
         height: 800px;
         background-color: red;
     }
-    &_about{
-       
+
+    &_about {
         height: 800px;
         background-color: yellow;
     }
-    &_contact{
-       
+
+    &_contact {
         height: 800px;
         background-color: green;
     }

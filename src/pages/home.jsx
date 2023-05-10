@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Profil from '../components/Profil';
-import Competences from '../components/Competences';
+import Skills from '../components/Skills';
 import Caroussel from '../components/Caroussel';
 import VideoPlayer from '../components/VideoPlayer';
 import monkeyVideo from '../assets/monkey.mp4';
@@ -10,38 +10,35 @@ import CarteProjet from '../components/CarteProjet';
 import CarteDeVisite from '../components/CarteDeVisite';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
+import Loader from '../components/Loader';
 import MainDesktop from '../components/MainDesktop';
 
-const onglets = [
+const tabs = [
   {
-    titre: 'Profil',
-
-    contenu: <Profil />
+    title: 'Profil',
+    content: <Profil />
   },
   {
-    titre: 'Compétences',
-
-    contenu: <Competences />
+    title: 'Compétences',
+    content: <Skills />
   },
   {
-    titre: 'Projets',
-
-    contenu: <CarteProjet />
+    title: 'Projets',
+    content: <CarteProjet />
   },
   {
-    titre: 'Loisirs',
-
-    contenu: <VideoPlayer src={monkeyVideo} />
+    title: 'Loisirs',
+    content: <VideoPlayer src={monkeyVideo} />
   },
 ];
 
 export default function Home() {
-  const [ongletActif, setOngletActif] = useState(0);
 
-  const changerOnglet = (index) => {
-    setOngletActif(index);
-  };
+  const [tabActif, setTabActif] = useState(0)
+
+  const changeTab = (index) => {
+    setTabActif(index);
+  }
 
   return (
     <div className="home">
@@ -64,23 +61,22 @@ export default function Home() {
 
         <Header />
         <div className='home_tablet_collapse'>
-          {onglets.map((onglet, index) => (
+          {tabs.map((tab, index) => (
             <button
               key={index}
-              className={`onglet_service ${index === ongletActif ? 'active' : ''}`}
-              onClick={() => changerOnglet(index)}
+              className={`tab_service ${index === tabActif ? 'active' : ''}`}
+              onClick={() => changeTab(index)}
             >
-
-              <h2 className="onglet_service_titre">{onglet.titre}</h2>
+              <h2 className="tab_service_title">{tab.title}</h2>
             </button>
           ))}
         </div>
 
         <section className="home_card">
           <div className="collapse_content">
-            <div className="collapse_content_contenu">
-              {onglets[ongletActif].contenu}
-            </div>
+            
+            {tabs[tabActif].content}
+            
           </div>
         </section>
 
@@ -91,6 +87,9 @@ export default function Home() {
       </section>
 
       <section className="home_desktop">
+        <div className="home_desktop_loader">
+          <Loader />
+        </div>
         <aside className="home_desktop_aside">
 
 
@@ -104,5 +103,5 @@ export default function Home() {
       </section>
 
     </div>
-  );
+  )
 }
