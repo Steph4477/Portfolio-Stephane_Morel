@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/Portfolio-Stephane_Morel/static/css/main.cb90c005.css",
-    "main.js": "/Portfolio-Stephane_Morel/static/js/main.137d6400.js",
+    "main.css": "/Portfolio-Stephane_Morel/static/css/main.c10fa061.css",
+    "main.js": "/Portfolio-Stephane_Morel/static/js/main.348683e6.js",
     "static/js/787.28cb0dcd.chunk.js": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js",
     "static/media/monkey.mp4": "/Portfolio-Stephane_Morel/static/media/monkey.add9063b1bde96d7dd74.mp4",
+    "static/media/kasa.png": "/Portfolio-Stephane_Morel/static/media/kasa.d563691016f74928ea41.png",
     "static/media/lapanthere.png": "/Portfolio-Stephane_Morel/static/media/lapanthere.587cfc08791408cf69da.png",
     "static/media/captureBooki.png": "/Portfolio-Stephane_Morel/static/media/captureBooki.365f38b4256f143f2104.png",
     "static/media/ohmyfood.png": "/Portfolio-Stephane_Morel/static/media/ohmyfood.5a7e12361cec621e4c14.png",
@@ -12,6 +13,7 @@
     "static/media/porteD.png": "/Portfolio-Stephane_Morel/static/media/porteD.ecf79a59bf74ec832013.png",
     "static/media/cv.pdf": "/Portfolio-Stephane_Morel/static/media/cv.bd226060ec12c8d482db.pdf",
     "static/media/ohmyfoodV.png": "/Portfolio-Stephane_Morel/static/media/ohmyfoodV.c2e41ced85c2f5a383ac.png",
+    "static/media/kasaV.png": "/Portfolio-Stephane_Morel/static/media/kasaV.ae437bc87b2fdf9461b6.png",
     "static/media/instagram.svg": "/Portfolio-Stephane_Morel/static/media/instagram.c83e628eea4e83e0d2b6c8e54910510c.svg",
     "static/media/phone.svg": "/Portfolio-Stephane_Morel/static/media/phone.9bee5a857d114ee0453ec69a2c0285f0.svg",
     "static/media/inkscape.svg": "/Portfolio-Stephane_Morel/static/media/inkscape.55b570d64308994669a1e8902a6de394.svg",
@@ -34,12 +36,12 @@
     "static/media/linkedin.svg": "/Portfolio-Stephane_Morel/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
     "static/media/figma.svg": "/Portfolio-Stephane_Morel/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/office.svg": "/Portfolio-Stephane_Morel/static/media/office.c9dbbe217921ad444ebf4be547273f01.svg",
-    "main.cb90c005.css.map": "/Portfolio-Stephane_Morel/static/css/main.cb90c005.css.map",
-    "main.137d6400.js.map": "/Portfolio-Stephane_Morel/static/js/main.137d6400.js.map",
+    "main.c10fa061.css.map": "/Portfolio-Stephane_Morel/static/css/main.c10fa061.css.map",
+    "main.348683e6.js.map": "/Portfolio-Stephane_Morel/static/js/main.348683e6.js.map",
     "787.28cb0dcd.chunk.js.map": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb90c005.css",
-    "static/js/main.137d6400.js"
+    "static/css/main.c10fa061.css",
+    "static/js/main.348683e6.js"
   ]
 }
