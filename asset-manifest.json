@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Stephane_Morel/static/css/main.7bfd3f63.css",
-    "main.js": "/Portfolio-Stephane_Morel/static/js/main.7b55bccb.js",
+    "main.css": "/Portfolio-Stephane_Morel/static/css/main.eb72644b.css",
+    "main.js": "/Portfolio-Stephane_Morel/static/js/main.3a118a05.js",
     "static/js/787.28cb0dcd.chunk.js": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js",
     "static/media/monkey.mp4": "/Portfolio-Stephane_Morel/static/media/monkey.add9063b1bde96d7dd74.mp4",
     "static/media/kasa.png": "/Portfolio-Stephane_Morel/static/media/kasa.d563691016f74928ea41.png",
@@ -34,12 +34,12 @@
     "static/media/figma.svg": "/Portfolio-Stephane_Morel/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/indeed.svg": "/Portfolio-Stephane_Morel/static/media/indeed.a71ba92cea8d46693ce9aa3bf6702577.svg",
     "static/media/office.svg": "/Portfolio-Stephane_Morel/static/media/office.c9dbbe217921ad444ebf4be547273f01.svg",
-    "main.7bfd3f63.css.map": "/Portfolio-Stephane_Morel/static/css/main.7bfd3f63.css.map",
-    "main.7b55bccb.js.map": "/Portfolio-Stephane_Morel/static/js/main.7b55bccb.js.map",
+    "main.eb72644b.css.map": "/Portfolio-Stephane_Morel/static/css/main.eb72644b.css.map",
+    "main.3a118a05.js.map": "/Portfolio-Stephane_Morel/static/js/main.3a118a05.js.map",
     "787.28cb0dcd.chunk.js.map": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bfd3f63.css",
-    "static/js/main.7b55bccb.js"
+    "static/css/main.eb72644b.css",
+    "static/js/main.3a118a05.js"
   ]
 }
