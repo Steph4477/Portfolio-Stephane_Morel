@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio-Stephane_Morel/static/css/main.cb415c17.css",
+    "main.css": "/Portfolio-Stephane_Morel/static/css/main.7bfd3f63.css",
     "main.js": "/Portfolio-Stephane_Morel/static/js/main.7b55bccb.js",
     "static/js/787.28cb0dcd.chunk.js": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js",
     "static/media/monkey.mp4": "/Portfolio-Stephane_Morel/static/media/monkey.add9063b1bde96d7dd74.mp4",
@@ -24,8 +24,8 @@
     "static/media/tiktok.svg": "/Portfolio-Stephane_Morel/static/media/tiktok.fafd91ddd92b9cbd87d9ce06e0a3cb95.svg",
     "static/media/html.svg": "/Portfolio-Stephane_Morel/static/media/html.e05dc519f445e8306881169981936c14.svg",
     "static/media/photoshop.svg": "/Portfolio-Stephane_Morel/static/media/photoshop.42d1a2d8393824a4d3248efd67ce59d6.svg",
-    "static/media/mongodb.svg": "/Portfolio-Stephane_Morel/static/media/mongodb.389aa18a9b02da23f02b77ddfc9d12be.svg",
     "index.html": "/Portfolio-Stephane_Morel/index.html",
+    "static/media/mongodb.svg": "/Portfolio-Stephane_Morel/static/media/mongodb.389aa18a9b02da23f02b77ddfc9d12be.svg",
     "static/media/javascript.svg": "/Portfolio-Stephane_Morel/static/media/javascript.865c831e9be0fc4b6b6d2ea470b3fa64.svg",
     "static/media/express.svg": "/Portfolio-Stephane_Morel/static/media/express.9ad76450a388aa7b7ecbd82421e48cea.svg",
     "static/media/git.svg": "/Portfolio-Stephane_Morel/static/media/git.43d387b77657117c0e407816cbf72476.svg",
@@ -34,12 +34,12 @@
     "static/media/figma.svg": "/Portfolio-Stephane_Morel/static/media/figma.44ca2c329ade686d78f62ad73790c621.svg",
     "static/media/indeed.svg": "/Portfolio-Stephane_Morel/static/media/indeed.a71ba92cea8d46693ce9aa3bf6702577.svg",
     "static/media/office.svg": "/Portfolio-Stephane_Morel/static/media/office.c9dbbe217921ad444ebf4be547273f01.svg",
-    "main.cb415c17.css.map": "/Portfolio-Stephane_Morel/static/css/main.cb415c17.css.map",
+    "main.7bfd3f63.css.map": "/Portfolio-Stephane_Morel/static/css/main.7bfd3f63.css.map",
     "main.7b55bccb.js.map": "/Portfolio-Stephane_Morel/static/js/main.7b55bccb.js.map",
     "787.28cb0dcd.chunk.js.map": "/Portfolio-Stephane_Morel/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb415c17.css",
+    "static/css/main.7bfd3f63.css",
     "static/js/main.7b55bccb.js"
   ]
 }
